@@ -1,0 +1,31 @@
+.header__btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 88px;
+    border-bottom: 1px solid $colorturquoise;
+    background-color: $colorwhite;
+    width: 100%;
+    & .navigation {
+        list-style: none;
+    }
+}
+
+    .btn {
+        all: unset;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: $colorpink;
+        border-radius: 50%;
+        &:hover {
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+
+    .logo {
+        margin-right: 250px;
+    }
+}

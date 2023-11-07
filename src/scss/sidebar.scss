@@ -1,0 +1,134 @@
+$colorblack : #1B1C21;
+$colorwhite: #FFFFFF;
+$colorpink: #FF3E79;
+$colordeepgrey: #7E7E82;
+
+.sidebar {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     position: fixed;
+     background-color: $colorwhite;
+     min-width: 306px;
+     height: calc(var(--vh, 1vh) * 100);
+     transform: translateX(-500%);
+     transition: transform 0.5s, opacity 1s, visibility 0.5s ease-in-out;
+     overflow-y: scroll;
+        &::-webkit-scrollbar{
+           display: none;
+        }
+
+        &__header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            .sidebar__icon {
+                background: $colorpink;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                margin-right: 16px;
+                cursor: pointer;
+                margin-top: 15px;
+                padding-left:0;
+            }
+            .sidebar__icon:hover {
+                transition: 0.3s;
+                opacity: 0.7;
+            }
+        }
+
+            
+
+     .sidebar__list {
+         list-style: none;
+         line-height: 50px;
+         padding-left: 24px;
+         font-size: 16px;
+         font-weight: 600;
+         > li a {
+            font-family: "TTLakes Regular";
+            font-size: 16px;
+             letter-spacing: -0.2px;
+             text-decoration: none;
+             color: $colorblack;
+             position: relative;
+         }
+         & a::before {
+             content:url("../img/highlight.svg");
+             position: absolute;
+             top:-5px;
+             left:-25px;
+             display: none;
+         }
+         & a:hover::before {
+             display: block;
+         }
+         & a:hover {
+            font-family: "TTLakes Medium";
+             color: $colordeepgrey ;
+             font-weight: 500;
+
+         }
+     }
+
+     .options {
+        display: flex;
+        gap: 16px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+     }
+
+     .sidebar__adress {
+         margin-left: 19px;
+         margin-bottom:12.4px;
+         font-weight: 700;
+     }
+     .sidebar__phone {
+        margin-left: 19px;
+        font-size: 24px;
+        margin-bottom: 41px;
+        font-family: "TTLakes Bold";
+        letter-spacing: -0.6px;
+        line-height: 32px;
+     }
+     .language{
+         display: flex;
+         gap:6px;
+         padding-left: 15px;
+         
+     }
+
+      .language__btn {
+        all: unset;
+        cursor: pointer;
+        font-family: "TTLakes Medium";
+        font-size: 16px;
+
+         :hover {
+         color: $colordeepgrey;
+         }
+     } 
+
+     .language__btn--active {
+        color:$colordeepgrey;
+    }
+
+    .language__btn:hover {
+        transition: 0.3s;
+        opacity: 0.7;
+    }
+    
+    .language__btn--active:hover {
+        opacity: unset;
+    }
+ }
+ .sidebar__logo {
+   padding: 30px 0 0 19px;
+  margin-bottom: 20px;
+}

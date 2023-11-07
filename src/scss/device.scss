@@ -1,0 +1,65 @@
+.section-device {
+    margin-left: 32px;
+}
+
+.swiper-container-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 200px;
+}
+
+
+.button-section {
+    display: flex;
+    flex-wrap:wrap;
+
+    &__btn {
+        min-width: 240px;
+        max-width: 240px;
+        height: 160px;
+        background-color:$colorwhite;
+        border-radius: 6px;
+        border: 1px solid $colorborderbutton;
+        margin-right: 24px;
+        position: relative;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &__text {
+        position: absolute;
+           top: 16px;
+           left: 16px;
+           font-family: "TTLakes Medium";
+    }
+
+    &__link {
+    display: block;
+    position: absolute;
+    right:16px;
+    bottom:16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $colorpink;
+    background-color: transparent;
+      &::after {
+      content: url("../img/dropdown.svg");
+      position: absolute;
+      left: 17px;
+      top: 14px;
+      }
+    }
+}
+
+
+
+.button-section--mobile {
+   display: flex;
+   height: 160px;
+}
+
+.button-section__btn--mobile {
+    display: flex;
+    margin-bottom: 0;
+}

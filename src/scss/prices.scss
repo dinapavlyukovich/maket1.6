@@ -1,0 +1,59 @@
+.section-prices {
+    margin-left: 32px;
+    margin-top: 50px;
+}
+.prices-container__table {
+    background-color:$colorwhite;
+    border-collapse: collapse;
+    border-radius: 6px;
+    margin-top: 16px;
+    width: 95%;
+    :last-child {
+        border-bottom: none;
+    }
+    & .table-row-1 {
+        text-align: left;
+        background-color: $colorgrey;
+        color: $colordeepgrey;
+        & th {
+            padding-left: 23px;
+            padding-bottom: 16px;
+        }
+    }
+}
+.table-row {
+    border-bottom: 1px solid $colorborderbutton;
+    & td {
+        padding: 23px;
+    }
+}
+.table-btn {
+    color: $colorwhite;
+    background-color: $colorpink;
+    border-radius: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: -0.15px;
+    border:none;
+    cursor: pointer;
+    white-space: nowrap;
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.7;
+    }
+     & span::after {
+         content:url("../img/whitedropdown.svg");
+         vertical-align: middle;
+         position: relative;
+         top: 3px;
+         left: 10px;
+     }
+    span {
+        font-family: "TTLakes Regular";
+        font-weight: 700;
+        font-size: 12px;
+        padding: 12px;
+    }
+}

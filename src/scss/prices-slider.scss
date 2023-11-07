@@ -1,0 +1,23 @@
+.swiper-container-3 {
+    & .price-section {
+        width: 240px;
+        height: 200px;
+        background-color: $colorwhite;
+        border-radius: 6px;
+        padding: 12px;
+        box-sizing:border-box;
+        position:relative;
+        margin-right: 18px;
+        & button {
+             position: absolute;
+             right: 16px;
+             bottom: 16px;
+        }
+        :nth-child(2n+1):not(:last-child) {
+            color: $colordeepgrey;
+        }
+        :nth-child(2n) {
+            padding-bottom: 10px;
+        }
+    }
+}

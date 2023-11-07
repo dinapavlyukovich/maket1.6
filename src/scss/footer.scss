@@ -1,0 +1,32 @@
+.footer {
+    padding-left: 32px;
+    margin-top: 32px;
+    .footer__text {
+        font-size: 14px;
+        width: 421px;
+        & a {
+            text-decoration: none;
+            font-size: 16px;
+            color: $colorblack;
+            font-weight: bold;
+             &::after {
+                 content:url("../img/dropdown.svg");
+                 vertical-align: middle;
+                 margin-left: 5px;
+             }
+        }
+    }
+    .footer__info {
+        margin-top: 50px;
+        color: $colordeepgrey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $colorturquoise;
+        .footer__ofert {
+            flex-basis: 330px;
+            margin: 32px 0 25px;
+            text-align: right;
+        }
+    }
+}
